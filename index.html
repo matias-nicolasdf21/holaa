@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- Declaramos idioma español -->
+<html lang="es"> <!-- 1. Declaramos el idioma español -->
 <head>
-  <meta charset="UTF-8"> <!-- Permite usar tildes y ñ -->
+  <meta charset="UTF-8"> <!-- Permite usar tildes, eñes y caracteres especiales -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página adaptable -->
   <title>Mi Página Personal</title>
 </head>
 
 <body>
-  <!-- Enlace para saltar al contenido principal -->
-  <a href="#contenido">Saltar al contenido</a>
+  <!-- 3. Enlace para saltar directamente al contenido principal -->
+  <a href="#contenido" class="skip-link">Saltar al contenido principal</a>
 
-  <!-- Encabezado principal -->
+  <!-- 2. Región de encabezado -->
   <header>
     <h1>Bienvenido a mi página web</h1>
   </header>
 
-  <!-- Contenido principal -->
+  <!-- 2. Región principal (main) -->
   <main id="contenido">
     <section>
       <h2>Sobre mí</h2>
-      <p>Hola, soy Matías Del Fierro. Esta es mi primera página web creada en HTML como parte del laboratorio de Interacción Humano-Computador. Me gusta aprender sobre tecnología, programación y diseño web.</p>
+      <p>Hola, soy <strong>Matías Del Fierro</strong>. Esta es mi primera página web creada en HTML como parte del laboratorio de Interacción Humano-Computador. Me interesa aprender sobre tecnología, programación y diseño web.</p>
     </section>
 
     <section>
@@ -33,20 +34,37 @@
 
     <section>
       <h2>Mi foto</h2>
-      <!-- Imagen local: asegúrate que esté en la misma carpeta que index.html -->
-      <img src="imagentrabajo.jpg" alt="Foto de perfil de Matías Del Fierro" width="300" height="300">
+      <!-- 5. Imagen accesible con texto alternativo y dimensiones -->
+      <img src="imagentrabajo.jpg" alt="Foto de perfil de Matías Del Fierro sonriendo" width="300" height="300">
     </section>
 
     <section>
       <h2>Enlaces de interés</h2>
       <p>Visita uno de mis sitios favoritos para aprender:</p>
-      <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+      <!-- 6. Enlace externo seguro y claro -->
+      <a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Visitar Wikipedia</a>
     </section>
   </main>
 
-  <!-- Pie de página -->
+  <!-- 2. Región de pie de página -->
   <footer>
     <p>© 2025 Matías Del Fierro</p>
   </footer>
+
+  <!-- Estilo opcional para mejorar visibilidad del enlace "Saltar al contenido" -->
+  <style>
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
 </body>
 </html>
